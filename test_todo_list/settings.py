@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'TreeMenu.wsgi.application'
+WSGI_APPLICATION = 'test_todo_list.wsgi.application'
 
 
 # Database
