@@ -23,5 +23,5 @@ from tasks.views import IndexView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/tasks/', include('tasks.api.urls')),
-    path('index/', IndexView.as_view()),
+    path('', IndexView.as_view()),
 ]
