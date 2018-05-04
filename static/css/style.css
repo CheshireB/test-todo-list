@@ -11,6 +11,11 @@
     padding: 5px;
 }
 
+.form-wrapper {
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
 .true{
     background-color: lightgreen;
 }

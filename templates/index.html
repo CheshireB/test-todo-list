@@ -17,10 +17,13 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row col-12">
+        <div class="row col-12 form-wrapper">
             <form id="create-task-form" method="POST" enctype="multipart/form-data">
-                <input type="text" name="text" placeholder="Type your task here">
-                <input type="submit" value="Create">
+                <div id="create-task-form" class="form-group">
+                    <label for="exampleInputEmail1">Task text</label>
+                    <input type="text" class="form-control" name="text" placeholder="Type your task here">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
         <div class="row task-container">

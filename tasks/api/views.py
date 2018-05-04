@@ -19,6 +19,10 @@ class TaskListView(ListAPIView):
     queryset = Task.objects.all()
     serializer_class = TaskSerializer
 
+    def filter_queryset(self, queryset):
+        queryset = queryset.order_by('is_complete')
+        return queryset
+
 
 # @method_decorator(csrf_exempt, name='dispatch')
 class TaskAPIView(RetrieveAPIView, UpdateModelMixin, DestroyModelMixin):
