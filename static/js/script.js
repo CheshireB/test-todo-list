@@ -99,7 +99,7 @@ $(document).on('click', '.task-delete', function (event) {
         url: 'http://127.0.0.1:8000/api/tasks/'+task_id+'/',
         type: 'DELETE',
         success: function(data) {
-            element.parentElement.remove();
+            render('http://127.0.0.1:8000/api/tasks/list');
     }});
 
 });
